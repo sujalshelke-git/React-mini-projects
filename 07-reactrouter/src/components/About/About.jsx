@@ -1,20 +1,24 @@
 import React from 'react'
+import {motion} from 'motion/react'
+
 
 export default function About() {
     return (
         <div className="py-16 bg-white">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-                    <div className="md:5/12 lg:w-5/12">
-                        <img
-                            src="https://images.pexels.com/photos/30910224/pexels-photo-30910224/free-photo-of-delicious-chocolate-cake-with-pistachios.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    <div  className="md:5/12 lg:w-5/12">
+                        <motion.img initial={{ x:0 }} 
+                        animate={{x:700, rotate:0 }} 
+                        transition={{delay:1, duration:3, repeat:0}}
+                            src="c:\Users\sujal\Downloads\superman-removebg-preview.png"
                             alt="image"
                         />
                     </div>
                     <div className="md:7/12 lg:w-6/12">
-                        <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+                        <motion.h2 animate className="text-2xl text-gray-900 font-bold md:text-4xl">
                             React development is carried out by passionate developers
-                        </h2>
+                        </motion.h2>
                         <p className="mt-6 text-gray-600">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
                             accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde
