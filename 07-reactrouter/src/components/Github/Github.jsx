@@ -15,7 +15,7 @@ function Github() {
   // },[])
   return (
     <div className='bg-gray-500 text-white m-5 p-4 text-3xl'>
-      Github Followers:{data?.followers} <img  src={data?.avatar_url} alt="git pic" width={300}/>
+      Github Followers:{data?.followers} <img  src="https://img.freepik.com/premium-photo/illustration-man-abstract-art-ai-generated_57312-1358.jpg" alt="git pic" width={300}/>
     </div>
   )
 }

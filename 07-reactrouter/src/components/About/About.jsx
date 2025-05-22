@@ -9,9 +9,12 @@ export default function About() {
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div  className="md:5/12 lg:w-5/12">
                         <motion.img initial={{ x:0 }} 
-                        animate={{x:700, rotate:0 }} 
-                        transition={{delay:1, duration:3, repeat:0}}
-                            src="c:\Users\sujal\Downloads\superman-removebg-preview.png"
+                       animate={{ y: [0, -30, 0] }}
+        transition={{
+          duration: 1,
+          repeat: Infinity,
+          ease: "easeInOut"}}
+                            src="https://img.freepik.com/premium-photo/high-quality-digital-image-wallpaper_783884-104158.jpg"
                             alt="image"
                         />
                     </div>
